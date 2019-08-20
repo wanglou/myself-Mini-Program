@@ -1,11 +1,24 @@
 <!--index.wxml-->
 <view class="container">
 
-  <!-- 操作数据库 -->
-  <view class="uploader">
-    <navigator url="../databaseGuide/databaseGuide" open-type="navigate" class="uploader-text">
-      <text>跳转详情页</text>
-    </navigator>
+  <!-- 页面 -->
+  <view class='yemian'>
+    <text>{{ dateTime }}</text>
+    <text class='zhanshi'>{{ food }}</text>
+    <button bindtap='action'>{{ buttonText }}</button>
+    <text class='custom' bindtap='toggleDialog'> 自定义菜单 </text>
   </view>
-
+  <!-- 弹出框 -->
+  <view class="zan-dialog {{ showDialog ? 'zan-dialog--show' : '' }}">
+    <view class="zan-dialog__mask" bindtap="toggleDialog" />
+    <view class="zan-dialog__container">
+      <view>
+        <text>想吃什么以'、'分隔输入, 例如‘鱼香肉丝、宫保鸡丁’</text>
+        <input value="{{inputValue}}" bindinput="inputChange" placeholder=""/>
+        <button
+          bindtap='confirm' type="primary">确定</button>
+        <button bindtap='cancle'>取消</button>
+      </view>
+    </view>
+  </view>
 </view>
