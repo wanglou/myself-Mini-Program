@@ -7,6 +7,7 @@
     <text class='zhanshi'>{{ food }}</text>
     <button bindtap='action'>{{ buttonText }}</button>
     <text class='custom' bindtap='toggleDialog'> 自定义菜单 </text>
+    <button class="cu-btn bg-orange margin-tb-sm">块状</button>
   </view>
   <!-- 弹出框 -->
   <view class="zan-dialog {{ showDialog ? 'zan-dialog--show' : '' }}">

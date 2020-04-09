@@ -10,7 +10,9 @@
 	},
 	"appid": "wxe464a8f6de8a5b98",
 	"projectname": "weixin",
-	"libVersion": "2.2.5",
+	"libVersion": "2.0.4",
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
 	"condition": {
 		"search": {
 			"current": -1,

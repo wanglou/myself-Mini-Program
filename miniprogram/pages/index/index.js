@@ -2,6 +2,18 @@
 const app = getApp()
 Page({
   data: {
+    ColorList: [
+      {
+        title: '嫣红',
+        name: 'red',
+        color: '#e54d42'
+      },
+      {
+        title: '桔橙',
+        name: 'orange',
+        color: '#f37b1d'
+      }
+    ],
     showDialog: false,
     dateTime: 'TIME',
     food: '空',

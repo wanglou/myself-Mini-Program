@@ -1,7 +1,7 @@
 /**index.wxss**/
 
 page {
-  background: #f6f6f6;
+  background: #ddd;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -18,7 +18,7 @@ page .zhanshi {
 }
 page .yemian button {
   width: 210rpx;
-  background: #00B26A;
+  /* background: #00B26A; */
   color: #fff;
   margin-top: 30rpx;
 }
